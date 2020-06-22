@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'David Smit'
 SITENAME = 'ddsmit'
-SITEURL = ''
+SITEURL = 'https://www.ddsmit.com'
 
 PATH = 'content'
 
@@ -26,8 +26,11 @@ LINKS = (
     )
 
 # Social widget
-SOCIAL = (('Twitter', 'https://twitter.com/davidouglasmit'),
-          ('Email', 'mailto:david.d.smit@gmail.com'),)
+SOCIAL = (
+    ('Twitter', 'https://twitter.com/davidouglasmit'),
+    ('Gmail', 'mailto:david.d.smit@gmail.com'),
+    ('LinkIn', 'https://www.linkedin.com/in/david-smit-b8220ba6/')
+    )
 
 DEFAULT_PAGINATION = 10
 

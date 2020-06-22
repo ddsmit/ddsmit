@@ -2,7 +2,7 @@ Title: init
 Date: 2020-06-19
 Category: this
 Tags: pelican, python, html, css
-Slug: self-init
+Slug: this-init
 Authors: David Smit
 Summary: From the ashes, the website takes form
 
