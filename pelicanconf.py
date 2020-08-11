@@ -6,6 +6,7 @@ AUTHOR = 'David Smit'
 SITENAME = 'ddsmit'
 SITEURL = 'https://www.ddsmit.com'
 
+THEME = 'blueidea'
 PATH = 'content'
 
 TIMEZONE = 'EST'
