@@ -95,7 +95,7 @@ Then edit the file to include the env variables
 
 
 {
-    "SECRET_KEY":"c41af915fbe41ebd20e4b772ef88d4a6",
+    "SECRET_KEY":"CasdAS342fd41af915fbe41ebd10e4b772ef88d4a6",
     "SQLALCHEMY_DATABASE_URI":"sqlite:///site.db"
 }
 
