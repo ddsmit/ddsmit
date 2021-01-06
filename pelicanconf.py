@@ -6,6 +6,7 @@ AUTHOR = 'David Smit'
 SITENAME = 'ddsmit'
 SITEURL = 'https://www.ddsmit.com'
 
+THEME = 'blueidea'
 PATH = 'content'
 
 TIMEZONE = 'EST'
@@ -22,15 +23,15 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (
     ('Courageous Engineer','https://www.courageousengineer.com'),
-    ('My GitHub','https://www.github.com/ddsmit'),
-    )
+)
 
 # Social widget
 SOCIAL = (
     ('Twitter', 'https://twitter.com/davidouglasmit'),
+    ('My GitHub','https://www.github.com/ddsmit'),
     ('Gmail', 'mailto:david.d.smit@gmail.com'),
     ('LinkIn', 'https://www.linkedin.com/in/david-smit-b8220ba6/')
-    )
+)
 
 DEFAULT_PAGINATION = 10
 

@@ -1,4 +1,8 @@
 venv
 output
 __pycache__
+<<<<<<< HEAD
 .idea/
+=======
+.idea/
+>>>>>>> origin/theme-updates
