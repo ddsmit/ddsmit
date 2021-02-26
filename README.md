@@ -17,6 +17,7 @@ My name is David (Douglas) Smit. I have been working as an Engineer for the last
 * CNN for Timeseries Data
 
 ## My Goals
-* Work in Software Development or Data Engineering
+* Merge my domain expertise with my love of programming and technology
+* Develop and build usefull tools for engineers in other domains (Manufacturing, Mechanical Design, etc)
 * Work Remote
 * Work on Projects I'm Passionate About
