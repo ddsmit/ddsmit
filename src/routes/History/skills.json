@@ -1,0 +1,4 @@
+{
+    "flask": {"url":"https://flask.palletsprojects.com/en/2.2.x/", "description": "Python Flask"},
+    "jenkins": {"url":"http://www.jenkins.io", "description": "Jenkins"}
+}
