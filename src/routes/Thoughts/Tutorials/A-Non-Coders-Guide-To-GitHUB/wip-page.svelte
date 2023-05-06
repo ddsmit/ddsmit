@@ -14,8 +14,3 @@
     licenses with the intent to keep the use of the code free to all users. The specifics can be found on the <a href="https://git-scm.com/">Git website</a>.
 </p>
 <h3></h3>Open Source - The code is available to the public, which allows contributions back to the code base from anyone.
-            It also allows use and modifications of the code for your own project within the restrictions of the license.
-        </li>
-        <li>Distributed - This means that multiple users can have the repo and it's content, as well as other locations (off-site storage, github, etc). This provides a </li>
-    </ul>
-</p>
