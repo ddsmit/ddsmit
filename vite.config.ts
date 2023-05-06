@@ -2,7 +2,14 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import type { UserConfig } from 'vite';
 
 const config: UserConfig = {
-	plugins: [sveltekit()]
+	plugins: [sveltekit()],
+	build: {
+		rollupOptions: {
+		  external: [            
+			'fsevents'
+		  ]
+	  }
+	}
 };
 
 export default config;
