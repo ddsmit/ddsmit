@@ -1,9 +1,9 @@
 <script>
-    import { position } from './stores.js';
+    // import { position } from './stores.js';
     let hideClass = "hide"
     function handleHide() {
         hideClass = (hideClass == "hide"? "": "hide")
-        position.set(hideClass == "hide"? "closed": "menu")
+        // position.set(hideClass == "hide"? "closed": "menu")
     }
 </script> 
 
