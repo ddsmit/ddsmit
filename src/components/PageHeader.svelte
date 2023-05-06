@@ -1,5 +1,5 @@
 <script>
-    import { position } from '../components/stores.JS';
+    import { position } from './stores.js';
     let hideClass = "hide"
     function handleHide() {
         hideClass = (hideClass == "hide"? "": "hide")
