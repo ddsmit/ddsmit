@@ -1,10 +1,10 @@
 <script>
-    import { position } from "./stores.JS";
+    // import { position } from "./stores.JS";
     export let path;
-    let myPosition;
-    position.subscribe(value => {
-		myPosition = value;
-	});
+    let myPosition = 'closed';
+    // position.subscribe(value => {
+	// 	myPosition = value;
+	// });
 </script>
 <style>
     img.closed {
