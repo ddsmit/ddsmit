@@ -3,13 +3,6 @@ import type { UserConfig } from 'vite';
 
 const config: UserConfig = {
 	plugins: [sveltekit()]
-	// build: {
-	// 	rollupOptions: {
-	// 	  external: [            
-	// 		'fsevents'
-	// 	  ]
-	//   }
-	// }
 };
 
 export default config;
