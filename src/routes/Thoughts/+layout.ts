@@ -12,9 +12,6 @@ function getName(path: string): any {
     return slug.split('/').at(-1).replaceAll('-',' ')
 }
 
-// function pageExists (name: string, pages: any): boolean {
-
-// }
 
 function createTree(pages: any, children: any): any {
     children =  !!children? []: children
@@ -34,9 +31,18 @@ function createTree(pages: any, children: any): any {
 
 
 export function load() {
-    const pages = Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte']))
-    console.log(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte'])['./LearningPath/Rust/+page.svelte'])
-
+    // const pages = Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte']))
+    let pages = [
+        './Data/What-Is-A-Data/+page.svelte',
+        './LearningPath/Rust/+page.svelte',
+        './My-Family/Kiddos/Cyddy-Biddy-Art/+page.svelte',
+        './My-Family/My-Wife/+page.svelte',
+        './TIL/+page.svelte',
+        './TIL/Coding/ADF-Python-SDK/wip-page.svelte',
+        './Tutorials/A-Non-Coders-Guide-To-GitHUB/wip-page.svelte',
+        './this.site/ResourcesUsed/+page.svelte'
+    ]
+    
     const allPosts = {
         name: 'Thoughts',
         slug: 'Thoughts',
@@ -47,37 +53,4 @@ export function load() {
     }
 }
 
-import("/src/routes/Thoughts/LearningPath/Rust/+page.svelte?t=1679237800492").then(result=>{console.log(result)})
-
-
-// {
-//     name:'TIL',
-//     slug:'Thoughts/TIL',
-//     children:[
-//         {
-//             name:'Coding',
-//             children:[
-//                 {
-//                     name:'PythonADF',
-//                     slug:'Thoughts/TIL/Coding/ADF-Python-SDK'
-//                 }
-//             ]
-//         }
-//     ]
-//  }
-// ,
-// {
-//     name:'Family',
-//     slug:'Thoughts/Family',
-//     children:[
-//         {
-//             name:'Wife',
-//             slug:'Thoughts/Family/Wife',
-//         },
-//         {
-//             name:'CyddyBiddyArt',
-//             slug:'Thoughts/Family/CyddyBiddyArt',
-//         }
-//     ]
-// }
 
