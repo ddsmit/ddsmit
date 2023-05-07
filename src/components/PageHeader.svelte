@@ -36,7 +36,7 @@
 
   .logo {
     display: inline-block;
-    width: 60vw;  
+    width: 80vw;  
   }
 
   .first:first-letter {
