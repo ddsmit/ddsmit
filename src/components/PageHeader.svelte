@@ -92,6 +92,7 @@
     justify-content: space-around;
     align-content: space-around;
     padding: 0;
+    margin-bottom: 1.5rem;
     width: 100%;
   }
 
