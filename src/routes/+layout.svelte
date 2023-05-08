@@ -1,7 +1,3 @@
-<svelte:head>
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-</svelte:head>
-
 <script>
   import PageHeader from '../components/PageHeader.svelte'
   import PageFooter from '../components/PageFooter.svelte'
@@ -12,6 +8,11 @@
   
 
 </script> 
+<svelte:head>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+</svelte:head>
+
+
 
 <style>
 
