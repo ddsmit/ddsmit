@@ -34,3 +34,5 @@ by one of his videos. I've watched many others, but those will be things I may a
 </ul>
 
 <h2>Animation.css</h2>
+
+I used the css file Neale outlines in a <a href="https://css-tricks.com/a-handy-little-system-for-animated-entrances-in-css/">CSS Tricks article</a> for many of the open animations (the nav bar, the roles in History). I've also been referencing this file in my own attempts at animation.
