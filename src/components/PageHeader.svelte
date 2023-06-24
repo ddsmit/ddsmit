@@ -3,7 +3,6 @@
     let hideClass = "hide"
     function handleHide() {
         hideClass = (hideClass == "hide"? "": "hide")
-        // position.set(hideClass == "hide"? "closed": "menu")
     }
 </script> 
 
