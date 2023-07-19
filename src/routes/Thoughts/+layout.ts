@@ -31,17 +31,17 @@ function createTree(pages: any, children: any): any {
 
 
 export function load() {
-    // const pages = Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte']))
-    let pages = [
-        './Data/What-Is-A-Data/+page.svelte',
-        './LearningPath/Rust/+page.svelte',
-        './My-Family/Kiddos/Cyddy-Biddy-Art/+page.svelte',
-        './My-Family/My-Wife/+page.svelte',
-        './TIL/+page.svelte',
-        './TIL/Coding/ADF-Python-SDK/wip-page.svelte',
-        './Tutorials/A-Non-Coders-Guide-To-GitHUB/wip-page.svelte',
-        './this.site/ResourcesUsed/+page.svelte'
-    ]
+    const pages = Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte']))
+    // let pages = [
+    //     './Data/What-Is-A-Data/+page.svelte',
+    //     './LearningPath/Rust/+page.svelte',
+    //     './My-Family/Kiddos/Cyddy-Biddy-Art/+page.svelte',
+    //     './My-Family/My-Wife/+page.svelte',
+    //     './TIL/+page.svelte',
+    //     './TIL/Coding/ADF-Python-SDK/wip-page.svelte',
+    //     './Tutorials/A-Non-Coders-Guide-To-GitHUB/wip-page.svelte',
+    //     './this.site/ResourcesUsed/+page.svelte'
+    // ]
     
     const allPosts = {
         name: 'Thoughts',
