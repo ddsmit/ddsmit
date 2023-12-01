@@ -1,4 +1,15 @@
 {
     "flask": {"url":"https://flask.palletsprojects.com/en/2.2.x/", "description": "Python Flask"},
-    "jenkins": {"url":"http://www.jenkins.io", "description": "Jenkins"}
+    "fastapi": {"url":"https://fastapi.tiangolo.com/", "description": "Python Fast API"},
+    "jenkins": {"url":"http://www.jenkins.io", "description": "Jenkins"},
+    "gRPC": {"url":"https://grpc.io/","description":"gRPC"},
+    "datafactory":{
+        "url":"https://azure.microsoft.com/en-us/products/data-factory/?ef_id=_k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&gad=1&gclid=CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE",
+        "description":"Azure Data Factory"
+    },
+    "dataflows":{
+        "url":"https://azure.microsoft.com/en-us/products/data-factory/?ef_id=_k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&gad=1&gclid=CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE",
+        "description":"Azure Data Factory"
+    }
+
 }

@@ -40,7 +40,8 @@ export function load() {
     //     './TIL/+page.svelte',
     //     './TIL/Coding/ADF-Python-SDK/wip-page.svelte',
     //     './Tutorials/A-Non-Coders-Guide-To-GitHUB/wip-page.svelte',
-    //     './this.site/ResourcesUsed/+page.svelte'
+    //     './this.site/ResourcesUsed/+page.svelte',
+    //     './Home/Projects/+page.svelte'
     // ]
     
     const allPosts = {

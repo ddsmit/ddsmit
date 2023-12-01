@@ -13,6 +13,10 @@
     }
 </script>
 <style>
+
+    h3>a {
+        color: green;
+    }
     h3, h4 {
         margin: 0;
     }
@@ -73,7 +77,7 @@
         
         {#each role.accomlishments as accomplishment}
         
-        <li><section>{accomplishment.description}</section></li>
+        <li><h5>{accomplishment.title}</h5><section>{accomplishment.description}</section></li>
         {/each}
         </ul>
         <h4>Technologies/Skills Used</h4>
