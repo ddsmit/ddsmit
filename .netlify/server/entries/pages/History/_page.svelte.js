@@ -1,7 +1,7 @@
 import { c as create_ssr_component, e as escape, b as add_attribute, f as each, v as validate_component } from "../../../chunks/index.js";
 const Role_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "h3.svelte-1nb1aqd.svelte-1nb1aqd,h4.svelte-1nb1aqd.svelte-1nb1aqd{margin:0}ul.svelte-1nb1aqd li.svelte-1nb1aqd{list-style-type:none}p.svelte-1nb1aqd.svelte-1nb1aqd{margin:2rem}.hide.svelte-1nb1aqd.svelte-1nb1aqd{display:none}.hide.expand.svelte-1nb1aqd.svelte-1nb1aqd{display:block}.expand.svelte-1nb1aqd.svelte-1nb1aqd{display:none}.arrow.svelte-1nb1aqd.svelte-1nb1aqd{font-size:1rem}button.svelte-1nb1aqd.svelte-1nb1aqd{border-radius:5px;color:var(--primary);border:white dotted 3px;background-color:black;padding:0px;padding-left:10px;padding-right:10px;margin:1rem;width:auto}button.svelte-1nb1aqd.svelte-1nb1aqd:hover{border:solid 3px var(--primary-hover)}",
+  code: "h3.svelte-158qege>a.svelte-158qege{color:green}h3.svelte-158qege.svelte-158qege,h4.svelte-158qege.svelte-158qege{margin:0}ul.svelte-158qege li.svelte-158qege{list-style-type:none}p.svelte-158qege.svelte-158qege{margin:2rem}.hide.svelte-158qege.svelte-158qege{display:none}.hide.expand.svelte-158qege.svelte-158qege{display:block}.expand.svelte-158qege.svelte-158qege{display:none}.arrow.svelte-158qege.svelte-158qege{font-size:1rem}button.svelte-158qege.svelte-158qege{border-radius:5px;color:var(--primary);border:white dotted 3px;background-color:black;padding:0px;padding-left:10px;padding-right:10px;margin:1rem;width:auto}button.svelte-158qege.svelte-158qege:hover{border:solid 3px var(--primary-hover)}",
   map: null
 };
 const Role = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -16,33 +16,53 @@ const Role = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.skills === void 0 && $$bindings.skills && skills2 !== void 0)
     $$bindings.skills(skills2);
   $$result.css.add(css);
-  return `<section><div class="main-header">${role.companyURL == null ? `<h3 class="svelte-1nb1aqd">${escape(role.company)} - ${escape(role.title)}</h3>` : `<h3 class="svelte-1nb1aqd"><a${add_attribute("href", role.companyURL, 0)}>${escape(role.company)}</a> - ${escape(role.title)}</h3>`}</div>
+  return `<section><div class="main-header">${role.companyURL == null ? `<h3 class="svelte-158qege">${escape(role.company)} - ${escape(role.title)}</h3>` : `<h3 class="svelte-158qege"><a${add_attribute("href", role.companyURL, 0)} class="svelte-158qege">${escape(role.company)}</a> - ${escape(role.title)}</h3>`}</div>
        
     <i>${escape(role.startDate)} to ${escape(role.endDate)}</i>
-    <button class="${escape(hideClass, true) + " expand arrow svelte-1nb1aqd"}">↓ more</button>
-    <div class="${escape(hideClass, true) + " animate blur svelte-1nb1aqd"}"><p class="svelte-1nb1aqd">${escape(role.description)}</p>
-        <h4 class="svelte-1nb1aqd">Accomplishments</h4>
-        <ul class="svelte-1nb1aqd">${each(role.accomlishments, (accomplishment) => {
-    return `<li class="svelte-1nb1aqd"><section>${escape(accomplishment.description)}</section></li>`;
+    <button class="${escape(hideClass, true) + " expand arrow svelte-158qege"}">↓ more</button>
+    <div class="${escape(hideClass, true) + " animate blur svelte-158qege"}"><p class="svelte-158qege">${escape(role.description)}</p>
+        <h4 class="svelte-158qege">Accomplishments</h4>
+        <ul class="svelte-158qege">${each(role.accomlishments, (accomplishment) => {
+    return `<li class="svelte-158qege"><h5>${escape(accomplishment.title)}</h5><section>${escape(accomplishment.description)}</section></li>`;
   })}</ul>
-        <h4 class="svelte-1nb1aqd">Technologies/Skills Used</h4>
-        <ul class="svelte-1nb1aqd">${each(role.skills, (roleSkill) => {
-    return `${skills2[roleSkill.id].url == null ? `<li class="svelte-1nb1aqd">${escape(skills2[roleSkill.id].description)}</li>` : `<li class="svelte-1nb1aqd"><a${add_attribute("href", skills2[roleSkill.id].url, 0)}>${escape(skills2[roleSkill.id].description)}</a></li>
-                    <p class="svelte-1nb1aqd">${escape(roleSkill.use)}</p>`}`;
+        <h4 class="svelte-158qege">Technologies/Skills Used</h4>
+        <ul class="svelte-158qege">${each(role.skills, (roleSkill) => {
+    return `${skills2[roleSkill.id].url == null ? `<li class="svelte-158qege">${escape(skills2[roleSkill.id].description)}</li>` : `<li class="svelte-158qege"><a${add_attribute("href", skills2[roleSkill.id].url, 0)}>${escape(skills2[roleSkill.id].description)}</a></li>
+                    <p class="svelte-158qege">${escape(roleSkill.use)}</p>`}`;
   })}</ul></div>
-    <button class="${escape(hideClass, true) + " arrow svelte-1nb1aqd"}">↑ less</button></section>`;
+    <button class="${escape(hideClass, true) + " arrow svelte-158qege"}">↑ less</button></section>`;
 });
 const flask = {
   url: "https://flask.palletsprojects.com/en/2.2.x/",
   description: "Python Flask"
 };
+const fastapi = {
+  url: "https://fastapi.tiangolo.com/",
+  description: "Python Fast API"
+};
 const jenkins = {
   url: "http://www.jenkins.io",
   description: "Jenkins"
 };
+const gRPC = {
+  url: "https://grpc.io/",
+  description: "gRPC"
+};
+const datafactory = {
+  url: "https://azure.microsoft.com/en-us/products/data-factory/?ef_id=_k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&gad=1&gclid=CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE",
+  description: "Azure Data Factory"
+};
+const dataflows = {
+  url: "https://azure.microsoft.com/en-us/products/data-factory/?ef_id=_k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&gad=1&gclid=CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE",
+  description: "Azure Data Factory"
+};
 const skills = {
   flask,
-  jenkins
+  fastapi,
+  jenkins,
+  gRPC,
+  datafactory,
+  dataflows
 };
 const roles = [
   {
@@ -53,19 +73,23 @@ const roles = [
     description: 'I am part of a small team that supports region americas and includes Data Analysts, Data Scientists, and Data Engineers. Even thought we are a smaller team, our work is at the heart of many of the leading edge projects and digitalization initiatives in the company. In my Data Engineer role, I have had an opportunity to learn and leverage cloud resources, manage big data, write "severless" functions, write CI/CD pipelines, develop Data Visualizations, and productionize solutions our data scientists have developed.',
     accomlishments: [
       {
-        title: "Component Visual Inspection Process",
-        description: "Productionized an AI Image inspection application",
-        results: "It's great"
+        title: "Component Visual Inspection Process Productionization and Improvement",
+        description: "Re-architected and refactored an existing visual inspection application to improve performance and maintainability including developing the CI/CD pipeline for automated deployments.",
+        results: "New potential revenue streams opened up because increase inspection frequency was now possible."
       }
     ],
     skills: [
       {
-        id: "flask",
-        use: "Created apis for AI"
+        id: "fastapi",
+        use: "Leveraged Fast API to create asynchonous API's for batching inference and to wrap algorithms developed by the data scientists."
+      },
+      {
+        id: "gRPC",
+        use: "Leveraged gRPC to communicate between the API containers and the TensorFlow serving container."
       },
       {
         id: "jenkins",
-        use: "Created CI/CD"
+        use: "Created CI/CD tailored to our specific architecture requirements."
       }
     ]
   },
