@@ -1,4 +1,4 @@
-import pages from "./pages.json"
+// import pages from "./pages.json"
 
 function getSlug(path: string): string {
     if (path.split('/').at(-1) == '+page.svelte') {
@@ -33,7 +33,7 @@ function createTree(pages: any, children: any): any {
 
 
 export function load() {
-    // const pages = Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte'],{ eager: true, as: "raw" }))
+    const pages = Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte'],{ eager: true, as: "raw" }))
     // let pages = [
     //     './Data/What-Is-A-Data/+page.svelte',
     //     './LearningPath/Rust/+page.svelte',

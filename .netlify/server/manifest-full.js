@@ -10,7 +10,7 @@ return {
 	assets: new Set([".DS_Store","img/Mastodon_Logotype.svg","img/dave.png","img/favicon.png","img/main.webp"]),
 	mimeTypes: {".svg":"image/svg+xml",".png":"image/png",".webp":"image/webp"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.cf0bea44.js","app":"_app/immutable/entry/app.06887161.js","imports":["_app/immutable/entry/start.cf0bea44.js","_app/immutable/chunks/index.37e5ecad.js","_app/immutable/chunks/singletons.a45f3708.js","_app/immutable/entry/app.06887161.js","_app/immutable/chunks/index.37e5ecad.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.79d5b3c2.js","app":"_app/immutable/entry/app.cbe5e48c.js","imports":["_app/immutable/entry/start.79d5b3c2.js","_app/immutable/chunks/index.37e5ecad.js","_app/immutable/chunks/singletons.4529dbb2.js","_app/immutable/entry/app.cbe5e48c.js","_app/immutable/chunks/index.37e5ecad.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
