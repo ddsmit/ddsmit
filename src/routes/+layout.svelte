@@ -2,11 +2,11 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
 </svelte:head>
 <script>
-  import PageHeader from '../components/PageHeader.svelte'
-  import PageFooter from '../components/PageFooter.svelte'
-  import Me from '../components/Me.svelte';
-  import '../css/animation.css'
-  import '../css/main.css'
+  import PageHeader from '$lib/components/PageHeader.svelte'
+  import PageFooter from '$lib/components/PageFooter.svelte'
+  import Me from '$lib/components/Me.svelte';
+  import '$lib/css/animation.css'
+  import '$lib/css/main.css'
   const mePath = new URL('../assets/img/dave.png', import.meta.url).href
   
 

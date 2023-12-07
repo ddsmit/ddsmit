@@ -1,5 +1,5 @@
 <script>
-    import Role from "../../components/Role.svelte";
+    import Role from "../../lib/components/Role.svelte";
     import skills from "./skills.json"
     import roles from "./roles.json"
     // let roles = [

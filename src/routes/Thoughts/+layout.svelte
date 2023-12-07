@@ -1,5 +1,5 @@
 <script>
-    import PostsContainer from '../../components/PostsContainer.svelte';
+    import PostsContainer from '../../lib/components/PostsContainer.svelte';
     import { page } from '$app/stores';
     let currentPage = $page.url.pathname;
 
