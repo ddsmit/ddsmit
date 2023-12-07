@@ -6,14 +6,14 @@ export default defineConfig(({ command }) => {
     // ...
     plugins: [
 		sveltekit(),
-		{
-			name: 'build-script',
-			buildStart(options) {
-			if (command === 'build') {
-				// console.log(Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte'])))
-			}
-			},
-		},
+		// {
+		// 	name: 'build-script',
+		// 	buildStart(options) {
+		// 	if (command === 'build') {
+		// 		// console.log(Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte'])))
+		// 	}
+		// 	},
+		// },
     ],
   }
 })
