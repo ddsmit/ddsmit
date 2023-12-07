@@ -55,9 +55,15 @@
         border: solid 3px var(--primary-hover);
     }
 
+    section.role {
+        padding: 1rem;
+        border: solid 3px var(--primary-hover);
+        border-radius: 10px;
+    }
+
 </style>
 
-<section>
+<section class="role">
     <div class="main-header">
         {#if role.companyURL == null}
             <h3>{role.company} - {role.title}</h3>

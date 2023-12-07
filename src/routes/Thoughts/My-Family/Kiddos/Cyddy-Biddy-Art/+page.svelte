@@ -1,1 +1,0 @@
-<img src="../../../../../static/main.webp" alt="Cydneys main page">

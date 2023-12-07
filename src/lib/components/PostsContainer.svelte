@@ -2,7 +2,7 @@
     export let posts
     export let page
     import Posterize from "./Posterize.svelte";
-    let hideClass = 'hide'
+    let hideClass = ''
     function handleHide() {
         hideClass = (hideClass == "hide"? "": "hide")
     }
@@ -23,7 +23,8 @@
     }
 </style>
 <div class="post-container" >
-    <h3 on:click={handleHide} on:keydown={handleHide}>Click Here For More!<span>↑</span><span>↓</span></h3>
+    <!-- <h3 on:click={handleHide} on:keydown={handleHide}>Click Here For More!<span>↑</span><span>↓</span></h3> -->
+    <h3>Posts</h3>
     <div id="posts" class="{hideClass} animate blur">
         <Posterize postData={posts} page={page} />
     </div>

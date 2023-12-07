@@ -13,11 +13,11 @@
         let stem = path_parts.pop()
         // path_parts.remove('Thoughts')
         const [_,...pp] = path_parts
-        const partial_path = pp.join(':')
+        const partial_path = pp.join(': ').replaceAll('-',' ')
         if (pp.length == 0){
-            return stem.replace('-',' ')
+            return stem.replaceAll('-',' ')
         }
-        return `${partial_path}: ${stem.replace('-',' ')}`
+        return `${partial_path}: ${stem.replaceAll('-',' ')}`
     }
     
 </script>

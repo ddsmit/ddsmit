@@ -11,7 +11,7 @@ function getSlug(path: string): string {
 
 function getName(path: string): any {
     let slug = getSlug(path)
-    return slug.split('/').at(-1).replaceAll('-',' ')
+    return slug.replaceAll('-',' ').split('/').at(-1)
 }
 
 
