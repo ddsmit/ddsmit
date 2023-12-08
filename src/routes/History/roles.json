@@ -9,12 +9,24 @@
         "description": "I am part of a small team that supports region americas and includes Data Analysts, Data Scientists, and Data Engineers. Even thought we are a smaller team, our work is at the heart of many of the leading edge projects and digitalization initiatives in the company. In my Data Engineer role, I have had an opportunity to learn and leverage cloud resources, manage big data, write \"severless\" functions, write CI/CD pipelines, develop Data Visualizations, and productionize solutions our data scientists have developed.",
         "accomlishments": [
             {
+                "title":"SAP BW ETL Process Migrataiton",
+                "description":"Developed tooling to maximize efficiency and quality for migrating dozens of views between (2) systems.",
+                "results":"Completed migration to new system with near 0 disruption to production processes, and now have a toolset that will continue to provide benefits in the future."
+            },
+            {
                 "title": "Component Visual Inspection Process Productionization and Improvement",
                 "description":"Re-architected and refactored an existing visual inspection application to improve performance and maintainability including developing the CI/CD pipeline for automated deployments.",
                 "results":"New potential revenue streams opened up because increase inspection frequency was now possible."
+            },
+            
+            {
+                "title":"Supported migration to automated systems as part of a Tableau to Power BI Migration",
+                "description":"Automated dozens of manual processes using cloud tooling.",
+                "results":"Reduced toil hours by 300+ hours a year over all of the processes we automated, freeing up the people manually pulling the data to focus more on devleoping insights to the data."
             }
         ],
         "skills": [
+            {"id":"adf", "use":"Developed multiple modular Azure Data Factory processes adaptable to mulple use cases."},
             {"id":"fastapi","use":"Leveraged Fast API to create asynchonous API's for batching inference and to wrap algorithms developed by the data scientists."},
             {"id":"gRPC","use":"Leveraged gRPC to communicate between the API containers and the TensorFlow serving container."},
             {"id":"jenkins","use":"Created CI/CD tailored to our specific architecture requirements."}
@@ -34,6 +46,27 @@
                 "title": "Improve the EOL failure rate",
                 "description":"Productionized an AI Image inspection application",
                 "results":"It's great"
+            }
+        ],
+        "skills": [
+            {"id":"flask","use":"Created apis for AI"},
+            {"id":"jenkins","use":"Created CI/CD"}
+        ]
+
+    },
+    {
+        "company": "GKN",
+        "companyURL": "https://www.gknautomotive.com/",
+        "startDate": "2019-12-18",
+        "endDate": "2022-07-22",
+        "title": "Advanced Manufacturing Engineer",
+        "description": "I was responsible for working with equipment suppliers to design, validate, and implement new equipment for either added capacity requirements or new product introductions. I was also responsible for developing the initial quality documentation (PFMEA, Control Plans, Work Instructions) as well as working with the AQE to get PPAP approval from our automotive customers.",
+        
+        "accomlishments": [
+            {
+                "title": "Implemented (2) Assembly Lines From Initial Concept Through PPAP",
+                "description":"Worked with ATC to implement (2) new assembly lines that included all lessons learned and best practices developed on early iterations of the line.",
+                "results":"Increased capacity by over 50%, and had one of the lowest Not Right First Time Through rates of a new assembly line."
             }
         ],
         "skills": [

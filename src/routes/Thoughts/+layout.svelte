@@ -10,9 +10,15 @@
         hideClass = (hideClass == "hide"? "": "hide")
     }
     export let testData = data.posts
-
+    console.log($page.url.pathname)
 </script>
-
+<style>
+    .postTitle {
+        text-align: center;
+        font-size: 3rem;
+    }
+</style>
+<h1 class="postTitle">{$page.url.pathname.split('/').at(-1)?.replaceAll('-',' ')}</h1>
 <slot></slot>
 
 <PostsContainer posts={testData} page={currentPage}/>

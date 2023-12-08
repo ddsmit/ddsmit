@@ -1,4 +1,3 @@
-<h1>My RSI</h1>
 <p>
     Over the last 3 years, I've struggled to control my RSI in my right wrist (repetetive strain injury, sometimes called carpel tunnel when it's in this area). 
     Though this time, I have been able to identify activities that create the most problems, and I have experimented with several things to improve the problem.
