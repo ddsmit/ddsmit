@@ -26,7 +26,7 @@
             }
         ],
         "skills": [
-            {"id":"adf", "use":"Developed multiple modular Azure Data Factory processes adaptable to mulple use cases."},
+            {"id":"adf", "use":"Developed modular and parameterized Azure Data Factory processes adaptable to multiple use cases."},
             {"id":"fastapi","use":"Leveraged Fast API to create asynchonous API's for batching inference and to wrap algorithms developed by the data scientists."},
             {"id":"gRPC","use":"Leveraged gRPC to communicate between the API containers and the TensorFlow serving container."},
             {"id":"jenkins","use":"Created CI/CD tailored to our specific architecture requirements."}
