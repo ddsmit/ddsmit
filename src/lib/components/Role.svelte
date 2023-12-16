@@ -66,6 +66,8 @@
         border-radius: 10px;
     }
 .divider{
+    display: flex;
+    flex-wrap: wrap;
     color: green;
     width:80%;
     margin:5px auto;
