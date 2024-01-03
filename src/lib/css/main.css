@@ -5,6 +5,7 @@
   --primary-hover: #c2185b;
   --primary-focus: rgba(216, 27, 96, 0.125);
   --primary-inverse: #FFF;
+  --nav-background: lightgrey;
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
     --primary-hover: #e91e63;
     --primary-focus: rgba(216, 27, 96, 0.25);
     --primary-inverse: #000;
+    --nav-background: black;
   }
 }
 
