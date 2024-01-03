@@ -18,7 +18,6 @@
     padding: 0.5rem;
 
     margin: 0;
-    /* background-color: var(--background-color); */
     background-image: linear-gradient(var(--background-color) 5rem,var(--primary-hover));
     border-bottom: solid var(--primary-hover) 1px;
     --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 90deg,#0000 91deg) 50% / 60px 100%;
