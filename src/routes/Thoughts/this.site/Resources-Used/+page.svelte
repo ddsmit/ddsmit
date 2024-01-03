@@ -39,5 +39,5 @@ I used the css file Neale outlines in a <a href="https://css-tricks.com/a-handy-
 </p>
 <h2>PrismJS</h2>
 <p>
-    For code snippets, I created a small component based on PrismJS. Unfortunately
+    For code snippets, I created a small component based on PrismJS. Unfortunately, I wasn't able to get the Python support working in this context. For the small snippets I've done so far, the JavaScript formatting has been fine, but it is likely something I'll need to resolve in the future.
 </p>
