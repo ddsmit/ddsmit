@@ -7,6 +7,19 @@
   import Me from '$lib/components/Me.svelte';
   import '$lib/css/animation.css'
   import '$lib/css/main.css'
+
+  import { onNavigate } from '$app/navigation';
+
+  onNavigate((navigation) => {
+    if (!document.startViewTransition) return;
+
+    return new Promise((resolve) => {
+      document.startViewTransition(async () => {
+        resolve();
+        await navigation.complete;
+      });
+    });
+  });
   const mePath = new URL('../assets/img/dave.png', import.meta.url).href
   
 
