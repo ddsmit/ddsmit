@@ -1,5 +1,7 @@
 <script>
-    import { each } from "svelte/internal";
+    import { each, has_prop } from "svelte/internal";
+    import SkillsTagger from "./SkillsTagger.svelte";
+    import LinkedSkills from "./LinkedSkills.svelte";
     export let role;
     export let skills;
 
@@ -66,28 +68,29 @@
         border-radius: 10px;
     }
 .divider{
-    display: flex;
+
     flex-wrap: wrap;
     color: green;
-    width:80%;
-    margin:5px auto;
+    width:90%;
+    /* margin:5px auto; */
     margin-bottom: 25px;
     overflow:hidden;
     text-align:center;   
     line-height:1.2em;
+    border-bottom: 3px dashed green;
 }
-
+/* 
 .divider:before, .divider:after{
     content:"";
     vertical-align:middle;
     display:inline-block;
-    width:80%;
+    width:90%;
     border:green dotted 3px;
     margin:0 2% 0 -55%;
 }
 .divider:after{
     margin:0 -55% 0 2%;
-}
+} */
 blockquote {
     margin-bottom: 100px;
     border-left: green 10px dashed;
@@ -114,19 +117,12 @@ blockquote {
         <ul>
         {#each role.accomlishments as accomplishment}
         
-        <li><h5>{accomplishment.title}</h5><p>{accomplishment.description}</p></li>
+        <li>
+            <h5>{accomplishment.title}</h5>
+            <LinkedSkills accomplishmentDescription={accomplishment.description} skills={skills} />
+            <!-- <SkillsTagger roleSkills = {accomplishment.skillsUsed} allSkills = {skills} /> -->
+        </li>
         {/each}
-        </ul>
-        <h4 class="divider">Technologies/Skills Used</h4>
-        <ul>
-            {#each role.skills as roleSkill}
-                {#if skills[roleSkill.id].url == null}
-                    <li><h5>skills[roleSkill.id].description}</h5></li>
-                {:else}
-                    <li><h5><a href="{skills[roleSkill.id].url}">{skills[roleSkill.id].description}</a></h5></li>
-                    <p>{roleSkill.use}</p>
-                {/if}
-            {/each}
         </ul>
     </div>
     <button on:click={handleHide} on:keydown={handleHide} class="{hideClass} arrow">↑ less</button>
