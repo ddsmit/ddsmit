@@ -6,7 +6,7 @@
 
         
         "title": "Data Engineer",
-        "description": "I am part of a small team that supports region americas and includes Data Analysts, Data Scientists, and Data Engineers. Even thought we are a smaller team, our work is at the heart of many of the leading edge projects and digitalization initiatives in the company. In my Data Engineer role, I have had an opportunity to learn and leverage cloud resources, manage big data, write \"severless\" functions, write CI/CD pipelines, develop Data Visualizations, and productionize solutions our data scientists have developed.",
+        "description": "I'm part of a forward thinking IT and Digitalization team that is focused on delivering innovative, customer centered solutions. I work on specific business problems in addition to creating valuable data products.",
         "accomlishments": [
             {
                 "title":"SAP BW ETL Process Migration",
@@ -61,6 +61,27 @@
         "endDate": "2022-07-22",
         "title": "Advanced Manufacturing Engineer",
         "description": "I was responsible for working with equipment suppliers to design, validate, and implement new equipment for either added capacity requirements or new product introductions. I was also responsible for developing the initial quality documentation (PFMEA, Control Plans, Work Instructions) as well as working with the AQE to get PPAP approval from our automotive customers.",
+        
+        "accomlishments": [
+            {
+                "title": "Implemented (2) Assembly Lines From Initial Concept Through PPAP",
+                "description":"Worked with ATC to implement (2) new assembly lines that included all lessons learned and best practices developed on early iterations of the line.",
+                "results":"Increased capacity by over 50%, and had one of the lowest Not Right First Time Through rates of a new assembly line."
+            }
+        ],
+        "skills": [
+            {"id":"flask","use":"Created apis for AI"},
+            {"id":"jenkins","use":"Created CI/CD"}
+        ]
+
+    },
+    {
+        "company": "John Deere",
+        "companyURL": "https://www.gknautomotive.com/",
+        "startDate": "2019-12-18",
+        "endDate": "2022-07-22",
+        "title": "Manufacturing Engineer",
+        "description": "",
         
         "accomlishments": [
             {

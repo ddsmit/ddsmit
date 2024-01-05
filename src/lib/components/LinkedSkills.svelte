@@ -21,4 +21,6 @@
 <p>
     {@html output}
 </p>
-Skills Used: {@html usedSkillsOutput}
+<section>
+    Skills Used: {@html usedSkillsOutput}
+</section>
