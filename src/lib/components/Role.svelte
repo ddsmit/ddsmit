@@ -17,13 +17,13 @@
 <style>
 
     h3>a {
-        color: green;
+        color: var(--green);
     }
     h3, h4 {
         margin: 0;
     }
     h4 {
-        color: green;
+        color: var(--green);
         size: 5 rem;
     }
     
@@ -49,8 +49,8 @@
     button {
         border-radius: 5px;
         color: var(--primary);
-        border:white dotted 3px;
-        background-color: black;
+        border:var(--contrast) dotted 3px;
+        background-color: var(--background);
         padding: 0px;
         padding-left: 10px;
         padding-right: 10px;
@@ -60,6 +60,7 @@
 
     button:hover {
         border: solid 3px var(--primary-hover);
+        color: var(--primary-hover)
     }
 
     section.role {
@@ -70,30 +71,19 @@
 .divider{
 
     flex-wrap: wrap;
-    color: green;
+    color: var(--green);
     width:90%;
     /* margin:5px auto; */
     margin-bottom: 25px;
     overflow:hidden;
     text-align:center;   
     line-height:1.2em;
-    border-bottom: 3px dashed green;
+    border-bottom: 3px dashed var(--green);
 }
-/* 
-.divider:before, .divider:after{
-    content:"";
-    vertical-align:middle;
-    display:inline-block;
-    width:90%;
-    border:green dotted 3px;
-    margin:0 2% 0 -55%;
-}
-.divider:after{
-    margin:0 -55% 0 2%;
-} */
+
 blockquote {
     margin-bottom: 100px;
-    border-left: green 10px dashed;
+    border-left: var(--green) 10px dashed;
 }
 
 </style>

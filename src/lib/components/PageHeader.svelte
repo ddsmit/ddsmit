@@ -73,7 +73,7 @@
   .last {
     font-size: 3rem;
     padding:0;
-    color:green;
+    color:var(--green);
     display: inline-block;
     margin-left: -2.2rem;
     margin-top: -7px;
@@ -100,8 +100,8 @@
 
   nav li {
     border-radius: 5px;
-    border:white dotted 3px;
-    background-color: black;
+    border:var(--contrast) dotted 3px;
+    background-color:var(--nav-background);
     padding: 20px;
     margin: 5px;
   }
@@ -114,12 +114,10 @@
 
 <header id="hidebutton" on:click={handleHide} on:keydown={handleHide}>
     <div class="logo">
-        <span class="first">d<span class='menu {hideClass} animate blur'>avid</span></span>
-        <span class="middle">d<span class='menu {hideClass} animate blur'>ouglas</span></span>
-        <span class="last" id="last">smit</span>
+        <span class="first">d<span class='{hideClass} animate blur'>avid</span></span><span class="middle">d<span class=' {hideClass} animate blur'>ouglas</span></span><span class="last" id="last">smit</span>
     </div>
-    <nav class="menu {hideClass} animate drop">
-        <ul class="menu">
+    <nav class=" {hideClass} animate drop">
+        <ul class="">
             <a href="/"><li>Home</li></a>
             <a href="/Thoughts"><li>Thoughts</li></a>
             <a href="/History"><li>History</li></a>

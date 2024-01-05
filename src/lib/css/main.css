@@ -2,10 +2,10 @@
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
   --primary: #000;
-  --primary-hover: #c2185b;
   --primary-focus: rgba(216, 27, 96, 0.125);
   --primary-inverse: #FFF;
-  /* --nav-background: rgb(238, 234, 234); */
+  --nav-background: rgb(245, 245, 245);
+  --green: rgb(74, 165, 123);
 }
 
 @media only screen and (prefers-color-scheme: dark) {
@@ -15,6 +15,7 @@
     --primary-focus: rgba(216, 27, 96, 0.25);
     --primary-inverse: #000;
     --nav-background: #11191f;
+    --green: green;
   }
 }
 
@@ -30,7 +31,7 @@
   --form-element-focus-color: var(--primary-focus);
   --switch-color: var(--primary-inverse);
   --switch-checked-background-color: var(--primary);
-
+  
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,4 +89,9 @@ code {
 }
 header {
   view-transition-name: header;
+
 }
+
+/* * {
+  border: red 1px solid;
+} */
