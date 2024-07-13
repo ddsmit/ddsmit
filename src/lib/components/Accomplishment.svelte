@@ -12,8 +12,7 @@
         border: red solid 1px;
     } */
     .accomplishment {
-        padding: 3rem;
-        /* border-block: 1px var(--green) solid; */
+        padding: 1rem;
         border: 1px var(--green) solid;
         max-width: 800px;
         margin-inline: auto;
