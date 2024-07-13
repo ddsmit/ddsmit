@@ -1,0 +1,31 @@
+{
+	"Jenkins": { "url": "http://www.jenkins.io", "description": "Jenkins" },
+    "github": {"url": "http://github.com", "description": "Version Control Tool"},
+    "Denodo": {"url":"https://www.denodo.com/en","description":"Virualization Platform"},
+	"gRPC": { "url": "https://grpc.io/", "description": "gRPC" },
+    "SQL": {"url":"https://azure.microsoft.com/en-us/products/azure-sql/?ef_id=_k_Cj0KCQiAhc-sBhCEARIsAOVwHuRVfKb3E0rJD52J5acMBUdrTL9e-gxCqhO86cibMjiYlezgN7C60BEaAocmEALw_wcB_k_&OCID=AIDcmm5edswduu_SEM__k_Cj0KCQiAhc-sBhCEARIsAOVwHuRVfKb3E0rJD52J5acMBUdrTL9e-gxCqhO86cibMjiYlezgN7C60BEaAocmEALw_wcB_k_&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuRVfKb3E0rJD52J5acMBUdrTL9e-gxCqhO86cibMjiYlezgN7C60BEaAocmEALw_wcB","description":"Azure SQL, SQL Server, and Spark SQL"},
+	"Azure Data Factory": {
+		"url": "https://azure.microsoft.com/en-us/products/data-factory/?ef_id=_k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&gad=1&gclid=CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE",
+		"description": "Azure Data Factory"
+	},
+	"Data Flows": {
+		"url": "https://azure.microsoft.com/en-us/products/data-factory/?ef_id=_k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&OCID=AIDcmm5edswduu_SEM__k_CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE_k_&gad=1&gclid=CjwKCAjwr_CnBhA0EiwAci5silzJoTQT9RIu-2J1UWbVnmhA9hrcy-HKBjlpUXUC806zzUHeaB6FpBoCDT8QAvD_BwE",
+		"description": "Azure Data Factory Data Flows"
+	},
+	"Power BI": {
+		"url": "https://powerbi.microsoft.com/en-us/landing/free-account/?ef_id=_k_Cj0KCQiAhc-sBhCEARIsAOVwHuRHWA3iEb700ts5VJvo_gmpsyUwMNMrEBRrbBGUpet6ZbDHlercwo4aAlQvEALw_wcB_k_&OCID=AIDcmm80atqgos_SEM__k_Cj0KCQiAhc-sBhCEARIsAOVwHuRHWA3iEb700ts5VJvo_gmpsyUwMNMrEBRrbBGUpet6ZbDHlercwo4aAlQvEALw_wcB_k_&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuRHWA3iEb700ts5VJvo_gmpsyUwMNMrEBRrbBGUpet6ZbDHlercwo4aAlQvEALw_wcB",
+		"description": "A Low/No Code Business Insight Platform for Visualizing and Understanding Data"
+	},
+	"Python": { "url": "https://python.org", "description": "Python" },
+	"Flask": { "url": "https://flask.palletsprojects.com/en/2.2.x/", "description": "Python Flask" },
+	"FastAPI": { "url": "https://fastapi.tiangolo.com/", "description": "Python Fast API" },
+	"Typer": {
+		"url": "https://typer.tiangolo.com/",
+		"description": "A CLI framework built around Pydantic and Click"
+	},
+	"Jupyter": { "url": "https://jupyter.org/", "description": "" },
+	"Plotly": { "url": "https://plotly.com/", "description": "A Web Based Plotting Library" },
+    "Rich": {"url": "https://rich.readthedocs.io/en/stable/introduction.html","description":"A Python Library for beautiful output to the terminal"},
+    "Requests": {"url": "https://requests.readthedocs.io/en/latest/", "description":"HTTP Requests for Humans"},
+    "TensorFlow Serving": {"url":"https://www.tensorflow.org/tfx/guide/serving","description":"A tool for efficient tensorflow model deployment"}
+}
