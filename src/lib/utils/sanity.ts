@@ -27,7 +27,7 @@ export async function getHistory(): Promise<Role> {
 				'skillsUsed': skillsUsed[]->{
 					...
 				}
-			},
+			}|order(order asc),
 			'companyAt': companyAt->{
 				...
 			}
