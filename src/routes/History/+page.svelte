@@ -3,6 +3,7 @@
     import skills from "./skills.json"
     import roles from "./roles.json"
     export let data;
+    console.log(data)
 
 </script>
 <h1>David D. Smit</h1>

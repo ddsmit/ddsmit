@@ -35,6 +35,18 @@ export async function getHistory(): Promise<Role> {
 	)
 }
 
+export async function getReadList(): Promise<ReadItem> {
+
+	return await client.fetch(
+		groq`*[_type == "readItem"]
+		{
+			...,
+			'tags': tags-> {
+				...
+			}
+		}| order(status, _createdAt)`
+	)
+}
 
 export interface Role {
 	_id: string;
@@ -49,3 +61,12 @@ export interface Role {
 	}>;
   }
 
+export interface ReadItem {
+	_id: string;
+	_type: 'readItem';
+	_updatedAt: string;
+	_createdAt: string;
+	link: string;
+	status: string;
+	recommend: boolean;
+}

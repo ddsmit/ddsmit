@@ -37,7 +37,8 @@
 		"@sveltejs/adapter-vercel": "^2.4.3",
 		"groq": "^3.50.0",
 		"highlight.js": "^11.9.0",
-		"prismjs": "^1.29.0"
+		"prismjs": "^1.29.0",
+		"url-metadata": "^4.1.1"
 	},
 	"optionalDependencies": {
 		"fsevents": "^2.3.3"
@@ -45,5 +46,5 @@
 	"engines": {
 		"node": ">=18",
 		"npm": ">=8"
-	  }
+	}
 }
