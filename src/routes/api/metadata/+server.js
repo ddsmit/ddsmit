@@ -1,7 +1,7 @@
 import urlMetadata from 'url-metadata';
 
 const allowedOrigin = {
-  'Access-Control-Allow-Origin': 'http://localhost:5173'
+  'Access-Control-Allow-Origin': ['https://ddsmit.com','https://www.ddsmit.com']
 };
 
 export async function GET (req) {
