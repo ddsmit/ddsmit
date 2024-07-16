@@ -128,7 +128,7 @@
             <a href="/"><li>Home</li></a>
             <a href="/Thoughts"><li>Thoughts</li></a>
             <a href="/History"><li>History</li></a>
-            <a href="/ReadList"><li>Read List</li></a>
+            <!-- <a href="/ReadList"><li>Read List</li></a> -->
             <a href="/Future"><li>Future</li></a>
         </ul>
     </nav>
