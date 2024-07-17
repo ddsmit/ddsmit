@@ -11,10 +11,10 @@
     margin-top: 3rem;
     width: 100%;
     border-top: solid 1px var(--primary-hover);
-    background-image: linear-gradient(var(--primary-hover),var(--background-color) 2rem);
+    /* background-image: linear-gradient(var(--primary-hover),var(--background-color) 2rem);
     --mask: conic-gradient(from 135deg at top,#0000,#000 1deg 89deg,#0000 90deg) 50%/60.00px 100%;
   -webkit-mask: var(--mask);
-          mask: var(--mask);
+          mask: var(--mask); */
   }
 </style>
 

@@ -19,7 +19,7 @@ export async function GET (req) {
       }
     );
   }
-
+  console.log(queryUrl)
   try {
     // Fetch metadata
     const metadata = await urlMetadata(queryUrl, { maxRedirects: 1 });
