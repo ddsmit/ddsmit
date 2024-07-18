@@ -22,10 +22,11 @@ export async function GET (req) {
   console.log(queryUrl)
   try {
     // Fetch metadata
-    const metadata = await urlMetadata(queryUrl, { maxRedirects: 1 });
+    // const metadata = await urlMetadata(queryUrl, { maxRedirects: 1 });
 
     // Error response when page has no title configured.
     // Nothing to show to user
+    let metadata = {title:'woot'}
     if (!metadata.title) throw new Error();
 
     // Caching the response at the edge for 1 hour.

@@ -7,25 +7,35 @@
     "isEntry": true,
     "src": ".svelte-kit/generated/server/internal.js"
   },
+  "Snippet.css": {
+    "file": "_app/immutable/assets/Snippet.83a318af.css",
+    "src": "Snippet.css"
+  },
   "_index.js": {
     "file": "chunks/index.js"
+  },
+  "_index2.js": {
+    "file": "chunks/index2.js"
   },
   "_internal.js": {
     "file": "chunks/internal.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ]
+  },
+  "_sanity.js": {
+    "file": "chunks/sanity.js"
   },
   "_stores.js": {
     "file": "chunks/stores.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
     "file": "entries/fallbacks/error.svelte.js",
     "imports": [
-      "_index.js",
+      "_index2.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -35,22 +45,23 @@
     "file": "index.js",
     "imports": [
       "_internal.js",
-      "_index.js"
+      "_index.js",
+      "_index2.js"
     ],
     "isEntry": true,
     "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout.0fa5a051.css",
+    "file": "_app/immutable/assets/_layout.4cdb7a1c.css",
     "src": "src/routes/+layout.css"
   },
   "src/routes/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.0fa5a051.css"
+      "_app/immutable/assets/_layout.4cdb7a1c.css"
     ],
     "file": "entries/pages/_layout.svelte.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ],
     "isEntry": true,
     "src": "src/routes/+layout.svelte"
@@ -58,7 +69,7 @@
   "src/routes/+page.svelte": {
     "file": "entries/pages/_page.svelte.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ],
     "isEntry": true,
     "src": "src/routes/+page.svelte"
@@ -66,37 +77,86 @@
   "src/routes/Future/+page.svelte": {
     "file": "entries/pages/Future/_page.svelte.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ],
     "isEntry": true,
     "src": "src/routes/Future/+page.svelte"
   },
   "src/routes/History/+page.css": {
-    "file": "_app/immutable/assets/_page.1948f0b4.css",
+    "file": "_app/immutable/assets/_page.58d028e7.css",
     "src": "src/routes/History/+page.css"
   },
   "src/routes/History/+page.svelte": {
     "css": [
-      "_app/immutable/assets/_page.1948f0b4.css"
+      "_app/immutable/assets/_page.58d028e7.css"
     ],
     "file": "entries/pages/History/_page.svelte.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ],
     "isEntry": true,
     "src": "src/routes/History/+page.svelte"
   },
+  "src/routes/History/+page.ts": {
+    "file": "entries/pages/History/_page.ts.js",
+    "imports": [
+      "_sanity.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/History/+page.ts"
+  },
+  "src/routes/History/[slug]/+page.js": {
+    "file": "entries/pages/History/_slug_/_page.js",
+    "imports": [
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/History/[slug]/+page.js"
+  },
+  "src/routes/History/[slug]/+page.svelte": {
+    "file": "entries/pages/History/_slug_/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/History/[slug]/+page.svelte"
+  },
+  "src/routes/ReadList/+page.css": {
+    "file": "_app/immutable/assets/_page.ad317b45.css",
+    "src": "src/routes/ReadList/+page.css"
+  },
+  "src/routes/ReadList/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.ad317b45.css"
+    ],
+    "file": "entries/pages/ReadList/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/ReadList/+page.svelte"
+  },
+  "src/routes/ReadList/+page.ts": {
+    "file": "entries/pages/ReadList/_page.ts.js",
+    "imports": [
+      "_sanity.js",
+      "_index.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/ReadList/+page.ts"
+  },
   "src/routes/Thoughts/+layout.css": {
-    "file": "_app/immutable/assets/_layout.de8a564b.css",
+    "file": "_app/immutable/assets/_layout.fc4f514d.css",
     "src": "src/routes/Thoughts/+layout.css"
   },
   "src/routes/Thoughts/+layout.svelte": {
     "css": [
-      "_app/immutable/assets/_layout.de8a564b.css"
+      "_app/immutable/assets/_layout.fc4f514d.css"
     ],
     "file": "entries/pages/Thoughts/_layout.svelte.js",
     "imports": [
-      "_index.js",
+      "_index2.js",
       "_stores.js"
     ],
     "isEntry": true,
@@ -110,66 +170,101 @@
   "src/routes/Thoughts/+page.svelte": {
     "file": "entries/pages/Thoughts/_page.svelte.js",
     "imports": [
-      "_index.js",
+      "_index2.js",
       "_stores.js"
     ],
     "isEntry": true,
     "src": "src/routes/Thoughts/+page.svelte"
   },
-  "src/routes/Thoughts/Data/What-Is-A-Data/+page.svelte": {
-    "file": "entries/pages/Thoughts/Data/What-Is-A-Data/_page.svelte.js",
+  "src/routes/Thoughts/A-Few-Of-My-Favorite-Things/+page.svelte": {
+    "file": "entries/pages/Thoughts/A-Few-Of-My-Favorite-Things/_page.svelte.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ],
     "isEntry": true,
-    "src": "src/routes/Thoughts/Data/What-Is-A-Data/+page.svelte"
+    "src": "src/routes/Thoughts/A-Few-Of-My-Favorite-Things/+page.svelte"
   },
-  "src/routes/Thoughts/LearningPath/AI/+page.svelte": {
-    "file": "entries/pages/Thoughts/LearningPath/AI/_page.svelte.js",
+  "src/routes/Thoughts/My-RSI/+page.svelte": {
+    "file": "entries/pages/Thoughts/My-RSI/_page.svelte.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ],
     "isEntry": true,
-    "src": "src/routes/Thoughts/LearningPath/AI/+page.svelte"
-  },
-  "src/routes/Thoughts/LearningPath/Rust/+page.svelte": {
-    "file": "entries/pages/Thoughts/LearningPath/Rust/_page.svelte.js",
-    "imports": [
-      "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/Thoughts/LearningPath/Rust/+page.svelte"
-  },
-  "src/routes/Thoughts/My-Family/Kiddos/Cyddy-Biddy-Art/+page.svelte": {
-    "file": "entries/pages/Thoughts/My-Family/Kiddos/Cyddy-Biddy-Art/_page.svelte.js",
-    "imports": [
-      "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/Thoughts/My-Family/Kiddos/Cyddy-Biddy-Art/+page.svelte"
-  },
-  "src/routes/Thoughts/My-Family/My-Wife/+page.svelte": {
-    "file": "entries/pages/Thoughts/My-Family/My-Wife/_page.svelte.js",
-    "imports": [
-      "_index.js"
-    ],
-    "isEntry": true,
-    "src": "src/routes/Thoughts/My-Family/My-Wife/+page.svelte"
+    "src": "src/routes/Thoughts/My-RSI/+page.svelte"
   },
   "src/routes/Thoughts/TIL/+page.svelte": {
     "file": "entries/pages/Thoughts/TIL/_page.svelte.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ],
     "isEntry": true,
     "src": "src/routes/Thoughts/TIL/+page.svelte"
   },
-  "src/routes/Thoughts/this.site/ResourcesUsed/+page.svelte": {
-    "file": "entries/pages/Thoughts/this.site/ResourcesUsed/_page.svelte.js",
+  "src/routes/Thoughts/TIL/2023December23/What-Is-A-Parking-Lot/+page.svelte": {
+    "file": "entries/pages/Thoughts/TIL/2023December23/What-Is-A-Parking-Lot/_page.svelte.js",
     "imports": [
-      "_index.js"
+      "_index2.js"
     ],
     "isEntry": true,
-    "src": "src/routes/Thoughts/this.site/ResourcesUsed/+page.svelte"
+    "src": "src/routes/Thoughts/TIL/2023December23/What-Is-A-Parking-Lot/+page.svelte"
+  },
+  "src/routes/Thoughts/Tech-Wish-List/+page.svelte": {
+    "file": "entries/pages/Thoughts/Tech-Wish-List/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Thoughts/Tech-Wish-List/+page.svelte"
+  },
+  "src/routes/Thoughts/Tech-Wish-List/Azure-Data-Factories/+page.svelte": {
+    "file": "entries/pages/Thoughts/Tech-Wish-List/Azure-Data-Factories/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Thoughts/Tech-Wish-List/Azure-Data-Factories/+page.svelte"
+  },
+  "src/routes/Thoughts/Tech-Wish-List/Power-BI/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/Snippet.83a318af.css"
+    ],
+    "file": "entries/pages/Thoughts/Tech-Wish-List/Power-BI/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Thoughts/Tech-Wish-List/Power-BI/+page.svelte"
+  },
+  "src/routes/Thoughts/Tech-Wish-List/Python/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/Snippet.83a318af.css"
+    ],
+    "file": "entries/pages/Thoughts/Tech-Wish-List/Python/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Thoughts/Tech-Wish-List/Python/+page.svelte"
+  },
+  "src/routes/Thoughts/Tech-Wish-List/VSCode/+page.svelte": {
+    "file": "entries/pages/Thoughts/Tech-Wish-List/VSCode/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Thoughts/Tech-Wish-List/VSCode/+page.svelte"
+  },
+  "src/routes/Thoughts/this.site/Resources-Used/+page.svelte": {
+    "file": "entries/pages/Thoughts/this.site/Resources-Used/_page.svelte.js",
+    "imports": [
+      "_index2.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/Thoughts/this.site/Resources-Used/+page.svelte"
+  },
+  "src/routes/api/metadata/+server.js": {
+    "file": "entries/endpoints/api/metadata/_server.js",
+    "isEntry": true,
+    "src": "src/routes/api/metadata/+server.js"
   }
 }
