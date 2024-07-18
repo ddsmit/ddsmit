@@ -7,11 +7,11 @@ export const load = (async () => {
 	if (readList) {
 		const readListWithMetadata = await Promise.all(
 			readList.map(async (readitem) => {
-				// const response = await fetch(`http://localhost:5173/api/metadata?url=${encodeURIComponent(readitem.link)}`);
-				// const metadata = await response.json();
+				const response = await fetch(`http://www.ddsmit.com/api/metadata?url=${encodeURIComponent(readitem.link)}`);
+				const metadata = await response.json();
 				return {
 					...readitem,
-					// metadata
+					metadata
 				};
 			})
 		);

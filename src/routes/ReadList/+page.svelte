@@ -26,7 +26,7 @@
     }
 </style>
 <h2>Need To Read</h2>
-<!-- {#each data.readList as read}
+{#each data.readList as read}
     {#if read.status == 'needToRead'}
     <a href="{read.link}">
         <section class="need-to-read">
@@ -47,4 +47,4 @@
         </section>
     </a>
     {/if}
-{/each} -->
+{/each}
