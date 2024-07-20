@@ -7,7 +7,7 @@ export const load = (async () => {
 	if (readList) {
 		const readListWithMetadata = await Promise.all(
 			readList.map(async (readitem) => {
-				const response = await fetch(`http://www.ddsmit.com/api/metadata?url=${encodeURIComponent(readitem.link)}`);
+				const response = await fetch(`https://www.ddsmit.com/api/metadata?url=${encodeURIComponent(readitem.link)}`);
 				const metadata = await response.json();
 				return {
 					...readitem,
