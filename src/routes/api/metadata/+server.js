@@ -1,7 +1,9 @@
 import urlMetadata from 'url-metadata';
 
 const allowedOrigin = {
-  'Access-Control-Allow-Origin': ['https://www.ddsmit.com']
+  'Access-Control-Allow-Origin': [
+    'https://www.ddsmit.com'
+  ]
 };
 
 export async function GET (req) {

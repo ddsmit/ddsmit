@@ -6,6 +6,7 @@
         text-decoration: none;
     }
     section {
+        width: auto;
         max-width: 900px;
         margin: 3rem;
         padding: 1rem;   
