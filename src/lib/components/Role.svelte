@@ -84,9 +84,7 @@ blockquote {
     margin-bottom: 100px;
     border-left: var(--green) 10px dashed;
 }
-PortableText {
-    color: red;
-}
+
 </style>
 
 <blockquote class="role">

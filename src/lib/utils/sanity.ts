@@ -44,7 +44,20 @@ export async function getReadList(): Promise<ReadItem> {
 			'tags': tags-> {
 				...
 			}
-		}| order(status, _createdAt)`
+		} | order(status, _createdAt)`
+	)
+}
+
+export async function getJournal(): Promise<JournalEntry> {
+	return await client.fetch(
+		groq`*[_type == "journalEntry"]
+		{
+			...,
+			'tags':tags-> {
+				...
+			}
+		} | order(_createdAt desc)
+		`
 	)
 }
 
@@ -70,3 +83,23 @@ export interface ReadItem {
 	status: string;
 	recommend: boolean;
 }
+
+
+export interface Tag {
+	_id: string;
+	_type: 'readItem';
+	_updatedAt: string;
+	_createdAt: string;
+	name: string;
+
+}
+export interface JournalEntry {
+	_id: string;
+	_type: 'readItem';
+	_updatedAt: string;
+	_createdAt: string;
+	name: string;
+	entry: PortableTextBlock;
+	tags: Array<Tag>;
+}
+
