@@ -3,13 +3,12 @@
     let currentPage = $page.url.pathname;
     console.log("page",currentPage)
 </script>
-<h1>My Open Source Landfill for My Mind</h1>
+<h1>The Open Source Landfill for My Mind</h1>
 <p>
-  I have a goal to document more of <a href="/Thoughts/TIL">what I learn</a> as well
-  as any information I agregate throughout the day. By sharing as much as I can, I hope
-  that I can help someone. Worst case, I have a nice, generally available notepad.
-</p>
-<p>
-  I'm also planning to write about anything else I think is interesting/worth documenting. So often, I think tech people get stuck on
-  tech, but I am a human with lots of different interests. 
+I have a goal to try and document and write more, and I'm trying to bring down the hyper-critical filter I have to keeps 
+me from putting out more of my thoughts. To achieve this, I'm going to create a structure that seperates the quick notes
+from the more detailed information. The structure I think makes sense (at least for now because you have always be improving)
+ is to have more long-form, evergreen articles in the <a href="/Thoughts/Articles">Articles</a> section, quick, daily/weekly notes 
+ and entries in the <a href="/Thoughts/Journal">Journal</a> section,
+ and other mind dumps like packages I want to check out, things I like, etc in a boards section (WIP, there will some things in the article section that get transfered).
 </p>
