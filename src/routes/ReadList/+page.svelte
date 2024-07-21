@@ -19,7 +19,7 @@
     }
     .read > h3, .read > p {
         color: grey;
-        text-decoration: line-through;
+        /* text-decoration: line-through; */
     }
     br {
         border-top: var(--green) solid 1px;
