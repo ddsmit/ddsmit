@@ -1,11 +1,8 @@
 <script>
     export let data
+    
     import { PortableText } from '@portabletext/svelte';
-    console.log(data.journal[0])
-    function toLocalDate(date) {
-        let utcDate = new Date(date);
-        return utcDate.toLocaleString();
-    }
+    import { toLocalDate } from '$lib/utils/date.js'
 </script>
 <style>
     h2 {

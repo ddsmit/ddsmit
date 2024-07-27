@@ -1,6 +1,6 @@
 import { getJournal } from "$lib/utils/sanity";
 import { error } from "@sveltejs/kit";
-import type { PageLoad } from "../../ReadList/$types";
+import type { PageLoad } from "./$types";
 
 export const load = (async () => {
     const journal = await getJournal();

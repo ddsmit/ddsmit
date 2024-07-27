@@ -1,10 +1,11 @@
 import type { PortableTextBlock } from '@portabletext/types';
 import { createClient } from '@sanity/client';
-import type { Image, ImageAsset, Slug } from '@sanity/types';
+// import { Image, ImageAsset, Slug } from '@sanity/types';
 
 import groq from 'groq';
 
 import { PUBLIC_SANITY_DATASET, PUBLIC_SANITY_PROJECT_ID } from '$env/static/public';
+
 
 if (!PUBLIC_SANITY_PROJECT_ID || !PUBLIC_SANITY_DATASET) {
 	throw new Error('Did you forget to run sanity init --env?');
@@ -61,6 +62,23 @@ export async function getJournal(): Promise<JournalEntry> {
 	)
 }
 
+export async function getBoards(): Promise<Array<Board>> {
+	return await client.fetch(
+		groq`*[_type == "board"]`
+	)
+}
+
+export async function getBoard(slug:string): Promise<Board> {
+	return await client.fetch(
+		groq`*[_type == "board" && slug.current == $slug] {
+		...,
+		'stickies':stickies[]-> {
+			...
+		}
+		}`,{slug}
+	)
+}
+
 export interface Role {
 	_id: string;
 	_type: 'role';
@@ -103,3 +121,23 @@ export interface JournalEntry {
 	tags: Array<Tag>;
 }
 
+export interface StickyNote {
+	_id: string;
+	_type: 'stickyNote';
+	_updatedAt: string;
+	_createdAt: string;
+	name: string;
+	information: PortableTextBlock;
+	tags: Array<Tag>;
+}
+
+export interface Board {
+	_id: string;
+	_type: 'board';
+	_updatedAt: string;
+	_createdAt: string;
+	name: string;
+	description: string;
+	// slug: Slug;
+	stickies: Array<StickyNote>;
+}

@@ -18,7 +18,7 @@
         font-size: 3rem;
     }
 </style>
-<h1 class="postTitle">{$page.url.pathname.split('/').at(-1)?.replaceAll('-',' ')}</h1>
+
 <slot></slot>
 
 <PostsContainer posts={testData} page={currentPage}/>

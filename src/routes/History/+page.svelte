@@ -1,7 +1,6 @@
 <script>
-    import Role from "../../lib/components/Role.svelte";
-    import skills from "./skills.json"
-    import roles from "./roles.json"
+    import Role from "$lib/components/Role.svelte";
+
     export let data;
     console.log(data)
 

@@ -1,3 +1,5 @@
+import { getBoards } from "$lib/utils/sanity"
+
 function getSlug(path: string): string {
     if (path.split('/').at(-1) == '+page.svelte') {
         return path.replace('.','Thoughts').replace('/+page.svelte','')
@@ -30,16 +32,21 @@ function createTree(pages: any, children: any): any {
 
 
 
-export function load() {
-    const pages = Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte'],{ eager: true, as: "raw" }))
-    
+export async function load() {
+    const pages = [
+        ...Object.keys(import.meta.glob(['./**/*.svelte','!./+page.svelte','!./**/+layout.svelte'],{ eager: true, as: "raw" }))
+    ].filter((page)=>{return !page.includes('[slug]')})
+    const boards = [...await getBoards()].map((value)=> {return `./Boards/${value.slug.current}/+page.svelte`})
+    let allPages = pages.concat(boards).sort()
+    console.log(allPages)
     const allPosts = {
         name: 'Thoughts',
         slug: 'Thoughts',
-        children: createTree(pages, {})
+        children: createTree(allPages, {})
     }
     return {
-        posts: allPosts
+        posts: allPosts,
+        boards: boards,
     }
 }
 
