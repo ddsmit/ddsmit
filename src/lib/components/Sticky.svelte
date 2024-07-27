@@ -28,7 +28,7 @@
     }
 
     .hide {
-        height: 25rem;
+        max-height: 25rem;
         overflow: hidden;
         z-index: 0;
         mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
