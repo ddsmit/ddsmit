@@ -2,7 +2,7 @@
     export let data
     
     import { PortableText } from '@portabletext/svelte';
-    import { toLocalDate } from '$lib/utils/date.js'
+    import { toLocalDate } from '$lib/utils/date.ts'
 </script>
 <style>
     h2 {
