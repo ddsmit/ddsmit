@@ -53,7 +53,14 @@
 
 
 </style>
-<section on:click={open} on:keydown={open} class="sticky {hideClass}">
+<section on:click={open} on:keydown={open} class="sticky {
+    sticky.information.reduce(
+    (all,next)=>{
+        return all + next.children[0].text
+    },
+    ''
+).length  > 800? hideClass:''}"
+>
     <h2 class="divider">{sticky.name}</h2>
     <PortableText onMissingComponent={false} value={sticky.information} />
 </section>
