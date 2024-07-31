@@ -9,6 +9,22 @@
         hideClass = (hideClass == "hide"? "": "hide")
     }
 
+    function getText(obj) {
+        let result = '';
+
+        function recursiveExtract(o) {
+            for (let key in o) {
+                if (typeof o[key] === 'object' && o[key] !== null) {
+                    recursiveExtract(o[key]);
+                } else if (key === 'text') {
+                    result += o[key] + ' ';
+                }
+            }
+        }
+
+        recursiveExtract(obj);
+        return result.trim();
+    }
 
 </script>
 <style>
@@ -28,7 +44,7 @@
     }
 
     .hide {
-        max-height: 25rem;
+        max-height: 15rem;
         overflow: hidden;
         z-index: 0;
         mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
@@ -54,13 +70,12 @@
 
 </style>
 <section on:click={open} on:keydown={open} class="sticky {
-    sticky.information.reduce(
-    (all,next)=>{
-        return all + next.children[0].text
-    },
-    ''
-).length  > 800? hideClass:''}"
+    getText(sticky).length  > 300? hideClass:''}"
 >
-    <h2 class="divider">{sticky.name}</h2>
+    {#if sticky.Link}
+        <a href={sticky.Link}><h2 class="divider">{sticky.name}</h2></a>
+    {:else}
+        <h2 class="divider">{sticky.name}</h2>
+    {/if}
     <PortableText onMissingComponent={false} value={sticky.information} />
 </section>
