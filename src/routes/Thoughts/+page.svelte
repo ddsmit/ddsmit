@@ -10,5 +10,5 @@ me from putting out more of my thoughts. To achieve this, I'm going to create a 
 from the more detailed information. The structure I think makes sense (at least for now because you have always be improving)
  is to have more long-form, evergreen articles in the <a href="/Thoughts/Articles">Articles</a> section, quick, daily/weekly notes 
  and entries in the <a href="/Thoughts/Journal">Journal</a> section,
- and other mind dumps like packages I want to check out, things I like, etc in a boards section (WIP, there will some things in the article section that get transfered).
+ and other mind dumps like packages I want to check out, things I like, etc in a <a href="/Thoughts/Boards">boards section</a>.
 </p>
