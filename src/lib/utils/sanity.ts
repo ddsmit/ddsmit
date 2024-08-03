@@ -71,7 +71,8 @@ export async function getBoards(): Promise<Array<Board>> {
 export async function getBoard(slug:string): Promise<Board> {
 	return await client.fetch(
 		groq`*[_type == "board" && slug.current == $slug] {
-		...
+		...,
+		stickies[] | order(_updatedAt asc)
 		}`,{slug}
 	)
 }

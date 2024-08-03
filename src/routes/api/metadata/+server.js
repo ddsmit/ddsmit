@@ -3,6 +3,7 @@ import urlMetadata from 'url-metadata';
 const allowedOrigin = {
   'Access-Control-Allow-Origin': [
     'https://www.ddsmit.com'
+    // 'http://locahost:5173'
   ]
 };
 

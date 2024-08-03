@@ -30,8 +30,12 @@
     {#if read.status == 'needToRead'}
     <a href="{read.link}">
         <section class="need-to-read">
-            <h3>{read.metadata.title}</h3>
-            <p>{read.metadata.description}</p>
+            {#if read.metadata}
+                <h3>{read.metadata.title}</h3>
+                <p>{read.metadata.description}</p>
+            {:else}
+                <p>{read.link}</p>
+            {/if}
         </section>
     </a>
     {/if}
@@ -40,10 +44,14 @@
 {#each data.readList as read}
     {#if read.status == 'read'}
     <a href="{read.link}">
-        <section class="read">
+        <section class="need-to-read">
             {#if read.recomend}👍🏻{/if}
-            <h3>{read.metadata.title}</h3>
-            <p>{read.metadata.description}</p>
+            {#if read.metadata}
+                <h3>{read.metadata.title}</h3>
+                <p>{read.metadata.description}</p>
+            {:else}
+                <p>{read.link}</p>
+            {/if}
         </section>
     </a>
     {/if}
