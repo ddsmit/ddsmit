@@ -44,7 +44,7 @@
 {#each data.readList as read}
     {#if read.status == 'read'}
     <a href="{read.link}">
-        <section class="need-to-read">
+        <section class="read">
             {#if read.recomend}👍🏻{/if}
             {#if read.metadata}
                 <h3>{read.metadata.title}</h3>
