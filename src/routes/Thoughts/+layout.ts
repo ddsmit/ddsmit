@@ -15,19 +15,51 @@ function getName(path: string): any {
 }
 
 
-function createTree(pages: any, children: any): any {
-    children =  !!children? []: children
+function createTree(pages: any): any {
+    const root: any = {}
+    
     pages.forEach(page => {
-        let name = getName(page)
         let slug = getSlug(page)
-        children.push({
-            name: name,
-            slug: slug,
-            children:[]
-        })
-
-    });
-    return children
+        if (!slug) return
+        
+        // Remove leading "Thoughts/" since it's the root
+        slug = slug.replace(/^Thoughts\//, '')
+        if (!slug) return
+        
+        const parts = slug.split('/').filter(p => p)
+        let current = root
+        
+        // Navigate/create nested structure
+        for (let i = 0; i < parts.length; i++) {
+            const part = parts[i]
+            const isLeaf = i === parts.length - 1
+            
+            if (!current[part]) {
+                current[part] = {
+                    name: part.replaceAll('-', ' '),
+                    slug: `Thoughts/${parts.slice(0, i + 1).join('/')}`,
+                    _children: {}
+                }
+            }
+            
+            if (isLeaf) {
+                current[part].slug = `Thoughts/${slug}`
+            } else {
+                current = current[part]._children
+            }
+        }
+    })
+    
+    // Convert nested object to array structure
+    const convertToArray = (obj: any): any[] => {
+        return Object.values(obj).map(item => ({
+            name: item.name,
+            slug: item.slug,
+            children: Object.keys(item._children || {}).length > 0 ? convertToArray(item._children) : []
+        }))
+    }
+    
+    return convertToArray(root)
 }
 
 
@@ -42,11 +74,11 @@ export async function load() {
     const allPosts = {
         name: 'Thoughts',
         slug: 'Thoughts',
-        children: createTree(allPages, {})
+        children: createTree(allPages)
     }
     return {
         posts: allPosts,
-        boards: boards,
+        // boards: boards,
     }
 }
 
