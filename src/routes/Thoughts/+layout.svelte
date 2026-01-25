@@ -9,8 +9,7 @@
     function handleHide() {
         hideClass = (hideClass == "hide"? "": "hide")
     }
-    export let testData = data.posts
-    console.log($page.url.pathname)
+    export let postData = data.posts
 </script>
 <style>
     .postTitle {
@@ -21,5 +20,5 @@
 
 <slot></slot>
 
-<PostsContainer posts={testData} page={currentPage}/>
+<PostsContainer posts={postData} page={currentPage}/>
 

@@ -1,13 +1,12 @@
-import { getBoard } from "$lib/utils/sanity";
+import { getBoards } from "$lib/utils/sanity";
 import { error } from "@sveltejs/kit";
 import type { PageLoad } from "./$types";
 
-
 export const load = (async (params) => {
-    const board = await getBoard(params.params.slug);
-    if (board) {
+    const boards = await getBoards();
+    if (boards) {
         return {
-            board: board[0]
+            boards: boards
         }
     }
 

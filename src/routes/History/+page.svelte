@@ -2,7 +2,6 @@
     import Role from "$lib/components/Role.svelte";
 
     export let data;
-    console.log(data)
 
 </script>
 <h1>David D. Smit</h1>

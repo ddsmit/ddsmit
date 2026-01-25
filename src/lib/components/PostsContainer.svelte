@@ -24,7 +24,7 @@
 </style>
 <div class="post-container" >
     <!-- <h3 on:click={handleHide} on:keydown={handleHide}>Click Here For More!<span>↑</span><span>↓</span></h3> -->
-    <h3>Posts</h3>
+    <h3>All Content</h3>
     <div id="posts" class="{hideClass} animate blur">
         <Posterize postData={posts} page={page} />
     </div>

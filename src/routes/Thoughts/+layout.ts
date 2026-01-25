@@ -21,23 +21,22 @@ function createTree(pages: any): any {
     pages.forEach(page => {
         let slug = getSlug(page)
         if (!slug) return
-        
         // Remove leading "Thoughts/" since it's the root
         slug = slug.replace(/^Thoughts\//, '')
         if (!slug) return
+
         
         const parts = slug.split('/').filter(p => p)
         let current = root
-        
         // Navigate/create nested structure
         for (let i = 0; i < parts.length; i++) {
             const part = parts[i]
             const isLeaf = i === parts.length - 1
-            
+            let slug_part = parts.slice(0, i + 1).join('/')
             if (!current[part]) {
                 current[part] = {
                     name: part.replaceAll('-', ' '),
-                    slug: `Thoughts/${parts.slice(0, i + 1).join('/')}`,
+                    slug: pages.includes(`./${slug_part}/+page.svelte`) ? `Thoughts/${slug_part}` : '',
                     _children: {}
                 }
             }
@@ -70,7 +69,6 @@ export async function load() {
     ].filter((page)=>{return !page.includes('[slug]')})
     const boards = [...await getBoards()].map((value)=> {return `./Boards/${value.slug.current}/+page.svelte`})
     let allPages = pages.concat(boards).sort()
-    console.log(allPages)
     const allPosts = {
         name: 'Thoughts',
         slug: 'Thoughts',
@@ -78,8 +76,16 @@ export async function load() {
     }
     return {
         posts: allPosts,
-        // boards: boards,
+        articles: pages
+            .filter(
+                page => page.includes('Articles') 
+                && page.includes('+page.svelte') 
+                && page !== './Articles/+page.svelte'
+            ).map(page => {
+                return {
+                    name: getName(page),
+                    slug: getSlug(page)
+                }
+            })
     }
-}
-
-
+}   

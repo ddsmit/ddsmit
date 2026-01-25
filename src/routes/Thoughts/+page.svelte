@@ -1,7 +1,6 @@
 <script>
     import { page } from '$app/stores';
     let currentPage = $page.url.pathname;
-    console.log("page",currentPage)
 </script>
 <h1>The Open Source Landfill for My Mind</h1>
 <p>
